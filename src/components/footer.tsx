@@ -1,19 +1,19 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export const Footer=()=>{
     return(
         <>
-          {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-12">
-        <div className="container">
+      <footer className="bg-[#2471A3] text-white py-4">
+        <div className="ml-10 mr-10">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bharan.jpg-hKTanjviD0CyhVpdsG7yLLQhlGVtOT.jpeg"
+              <Image
+                src="/logo/bhararn-footer-img.png"
                 alt="Bharan Ventures Logo"
-                width={150}
-                height={35}
-                className="h-8 w-auto brightness-200 contrast-200 mb-4"
+                width={90}
+                height={20}
+                className="rounded-md w-auto mb-4 h-20"
               />
               <p className="text-sm">
                 Building the next generation of startups with founders who dare
@@ -23,19 +23,19 @@ export const Footer=()=>{
             <div>
               <h4 className="font-semibold text-white mb-4">Quick Links</h4>
               <div className="grid grid-cols-2 gap-2">
-                <Link href="#how-we-work" className="text-sm hover:text-white">
+                <Link href="#how-we-work" className="text-sm text-white">
                   How We Work
                 </Link>
-                <Link href="#portfolio" className="text-sm hover:text-white">
+                <Link href="#portfolio" className="text-sm text-white">
                   Portfolio
                 </Link>
-                <Link href="#services" className="text-sm hover:text-white">
+                <Link href="#services" className="text-sm text-white">
                   Services
                 </Link>
-                <Link href="#join-us" className="text-sm hover:text-white">
+                <Link href="#join-us" className="text-sm text-white">
                   Join Us
                 </Link>
-                <Link href="#contact" className="text-sm hover:text-white">
+                <Link href="#contact" className="text-sm text-white">
                   Contact
                 </Link>
               </div>
@@ -43,7 +43,7 @@ export const Footer=()=>{
             <div>
               <h4 className="font-semibold text-white mb-4">Connect With Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white">
+                {/* <a href="#" className="text-gray-400 hover:text-white">
                   <svg
                     className="h-6 w-6"
                     fill="currentColor"
@@ -56,8 +56,8 @@ export const Footer=()=>{
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                </a> */}
+                <a href="#" className=" text-white">
                   <svg
                     className="h-6 w-6"
                     fill="currentColor"
@@ -69,7 +69,7 @@ export const Footer=()=>{
                 </a>
                 <a
                   href="https://linkedin.com/company/bharanventures"
-                  className="text-gray-400 hover:text-white"
+                  className=" text-white"
                 >
                   <svg
                     className="h-6 w-6"
